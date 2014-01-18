@@ -25,6 +25,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espresso10wifi \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# Packages
+PRODUCT_PACKAGES += \
+    SamsungServiceMode \
+    OmniGears
+
 # IR packages
 PRODUCT_PACKAGES += \
     consumerir.piranha
