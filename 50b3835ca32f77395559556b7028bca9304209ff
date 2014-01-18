@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb5d2d02_69398aca",
+        "filename": "p5110.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000032
+      },
+      "writtenOn": "2014-01-18T01:44:20Z",
+      "side": 1,
+      "message": "SamsungServiceMode is for cellular-capable devices.\n\nAlso, OmniGears is already built by default.",
+      "revId": "50b3835ca32f77395559556b7028bca9304209ff",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
