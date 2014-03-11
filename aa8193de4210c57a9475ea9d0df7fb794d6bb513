@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b77b57d_27b33299",
+        "filename": "omni_p5110.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000758
+      },
+      "writtenOn": "2014-03-11T00:14:49Z",
+      "side": 1,
+      "message": "Should have a line split between PRODUCT_NAME \u0026 TARGET_DEVICE to improve readability.",
+      "revId": "aa8193de4210c57a9475ea9d0df7fb794d6bb513",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
