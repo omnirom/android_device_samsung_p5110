@@ -18,6 +18,9 @@
 # bootanimation
 TARGET_BOOTANIMATION_SIZE := 480x320
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only
+
 # Inherit common Omni configurations
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
