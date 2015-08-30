@@ -7,12 +7,6 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_device_samsung_omap4-common",
-    "target_path": "device/samsung/omap4-common",
-    "revision": "android-5.1"
-  },
-  {
-    "remote": "omnirom",
     "repository": "android_device_samsung_espresso-common",
     "target_path": "device/samsung/espresso-common",
     "revision": "android-5.1"
