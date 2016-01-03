@@ -14,37 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Use 44.1 kHz UI sounds
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
-# bootanimation
+# Bootanimation
 TARGET_BOOTANIMATION_SIZE := 480x320
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
-
-# Inherit common Omni configurations
+# Inherit common Omni configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
-
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-
-# Inherit device specific configurations
-$(call inherit-product, device/samsung/p5110/device.mk)
 
 # OmniRom specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
 
-## Device identifier. This must come after all inclusions
-PRODUCT_MODEL := GT-P5110
-PRODUCT_BRAND := samsung
-PRODUCT_NAME := omni_p5110
-PRODUCT_DEVICE := p5110
-PRODUCT_MANUFACTURER := samsung
+# Inherit device specific configuration
+$(call inherit-product, device/samsung/p5110/aosp_p5110.mk)
 
-#Set build fingerprint / ID / Prduct Name ect.
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := omni_p5110
+
+# Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=espresso10wifixx \
-    TARGET_DEVICE=espresso10wifi \
     PRIVATE_BUILD_DESC="espresso10wifixx-user 4.2.2 JDQ39 P5110XXDML1 release-keys" \
     BUILD_FINGERPRINT="samsung/espresso10wifixx/espresso10wifi:4.2.2/JDQ39/P5110XXDML1:user/release-keys"
